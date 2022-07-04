@@ -4,7 +4,7 @@ import com.Attractor.Product;
 
 public class Meal extends Product {
 
-    public Meal(int weight, String name, int qualityOfProduct, double price) {
+    public Meal(int weight, String name, double qualityOfProduct, int price) {
         super(weight, name, qualityOfProduct, price);
     }
 
@@ -29,22 +29,22 @@ public class Meal extends Product {
     }
 
     @Override
-    public int getQualityOfProduct() {
+    public double getQualityOfProduct() {
         return super.getQualityOfProduct();
     }
 
     @Override
-    public void setQualityOfProduct(int qualityOfProduct) {
+    public void setQualityOfProduct(double qualityOfProduct) {
         super.setQualityOfProduct(qualityOfProduct);
     }
 
     @Override
-    public double getPrice() {
+    public int getPrice() {
         return super.getPrice();
     }
 
     @Override
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         super.setPrice(price);
     }
 }

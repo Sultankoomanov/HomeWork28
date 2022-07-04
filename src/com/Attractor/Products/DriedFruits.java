@@ -3,7 +3,7 @@ package com.Attractor.Products;
 import com.Attractor.Product;
 
 public class DriedFruits extends Product {
-    public DriedFruits(int weight, String name, int qualityOfProduct, double price) {
+    public DriedFruits(int weight, String name, double qualityOfProduct, int price) {
         super(weight, name, qualityOfProduct, price);
     }
 
@@ -28,22 +28,22 @@ public class DriedFruits extends Product {
     }
 
     @Override
-    public int getQualityOfProduct() {
+    public double getQualityOfProduct() {
         return super.getQualityOfProduct();
     }
 
     @Override
-    public void setQualityOfProduct(int qualityOfProduct) {
+    public void setQualityOfProduct(double qualityOfProduct) {
         super.setQualityOfProduct(qualityOfProduct);
     }
 
     @Override
-    public double getPrice() {
+    public int getPrice() {
         return super.getPrice();
     }
 
     @Override
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         super.setPrice(price);
     }
 }

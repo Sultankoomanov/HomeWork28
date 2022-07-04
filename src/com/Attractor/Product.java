@@ -3,10 +3,10 @@ package com.Attractor;
 public abstract class Product {
     private int weight;
     private String name;
-    private int qualityOfProduct;
-    private double price;
+    private double qualityOfProduct;
+    private int price;
 
-    public Product(int weight, String name, int qualityOfProduct, double price) {
+    public Product(int weight, String name, double qualityOfProduct, int price) {
         this.weight = weight;
         this.name = name;
         this.qualityOfProduct = qualityOfProduct;
@@ -31,19 +31,19 @@ public abstract class Product {
         this.name = name;
     }
 
-    public int getQualityOfProduct() {
+    public double getQualityOfProduct() {
         return qualityOfProduct;
     }
 
-    public void setQualityOfProduct(int qualityOfProduct) {
+    public void setQualityOfProduct(double qualityOfProduct) {
         this.qualityOfProduct = qualityOfProduct;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 }
