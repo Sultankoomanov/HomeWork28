@@ -1,5 +1,5 @@
 package com.Attractor;
 
-public class Case {
+public abstract class Case {
 
 }
